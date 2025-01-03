@@ -10,8 +10,8 @@ export async function GET(request,{params}) {
         return NextResponse.json({message:'no todo found'},{status:404})
         return NextResponse.json({
     
-    todo:todos[index],
-    })
+    todo:todos[index]
+    },{status:200})
     
     
 }
